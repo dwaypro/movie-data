@@ -19,6 +19,13 @@
 	height: 158px;
 }
 
+.frame {
+	height: 158px;
+	width: 230px;
+}
+
+
+
 .h2 {
 	font-size: 1.25em;
 	border-top-width: 1px;
