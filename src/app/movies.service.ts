@@ -16,7 +16,7 @@ const httpOptions ={
 @Injectable()
 export class MoviesService {
 
-  private moviesUrl = 'http://www.omdbapi.com/?s=Bond&apikey=b58323bb';
+  private moviesUrl = 'http://www.omdbapi.com/?s=Bond';
 
   constructor(
   	private http: HttpClient,

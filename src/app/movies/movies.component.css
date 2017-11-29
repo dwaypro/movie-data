@@ -27,6 +27,13 @@ div {
 	width: 230px;
 }
 
+.logo {
+	margin-left: 50px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+}
+
 #page {
 	width: 711px;
 	margin: 28px auto;
@@ -44,5 +51,13 @@ div {
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #aeaeae;
+}
+
+.container {
+	margin-top: 100px;
+}
+.box {
+	width: 230px;
+	margin-left: 10px;
 }
 
