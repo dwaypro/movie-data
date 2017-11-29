@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	color: #000;
+	font-size: 62.5%;
+	line-height: 1.8em;	
+}
+
+div {
+	display: block;
+}

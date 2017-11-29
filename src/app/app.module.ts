@@ -7,6 +7,7 @@ import { MoviesComponent } from './movies/movies.component';
 import {MockMoviesService} from './mock-movies.service';
 import { AppRoutingModule } from './/app-routing.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,

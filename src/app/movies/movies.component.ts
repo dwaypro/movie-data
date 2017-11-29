@@ -8,7 +8,7 @@ import { SlicePipe } from '@angular/common';
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+  styleUrls: ['./movies.component.css'],
 })
 
 

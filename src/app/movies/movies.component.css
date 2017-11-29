@@ -2,9 +2,12 @@
 	padding-top: 16px;
 }
 
-.row {
+#content.row {
 	zoom: 1;
 	margin-left: -10px;
+}
+div {
+	display: block;
 }
 
 .p3 {
@@ -24,7 +27,17 @@
 	width: 230px;
 }
 
+#page {
+	width: 711px;
+	margin: 28px auto;
+	position: relative;
+	overflow: hidden;
+}
 
+#middle {
+	position: relative;
+	min-height: 450px;
+}
 
 .h2 {
 	font-size: 1.25em;
@@ -32,10 +45,4 @@
 	border-top-style: solid;
 	border-top-color: #aeaeae;
 }
-body * {
-	color: #fff;
-}
 
-div {
-	display: block;
-}
