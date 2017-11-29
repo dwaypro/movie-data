@@ -11,4 +11,6 @@ export const MOVIES: Movie[] = [
   { id: 18, title: 'Dr IQ' },
   { id: 19, title: 'Magma' },
   { id: 20, title: 'Tornado' }
+  { id: 21, title: 'Mega Man' }
+  { id: 22, title: 'Cat Woman' }
 ];

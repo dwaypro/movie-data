@@ -1,16 +1,13 @@
 <h2> My Movies! </h2>
 <div class="row">
-	<div *ngFor="let movie of movies; let i = index">
-		<div class="card" *ngIf="i % 3 == 0"></div>
-    <div class="col-md-4">{{movie.id}} {{movie.title}}</div>
+	<div *ngFor="let movie of movies" class="col-sm-3 col-sm-3">
+    <div class="card">{{movie.id}} {{movie.title}}</div>
 	</div>
 </div>
 
-<div>
-	<label> Find Movie:
-		<input #movieName />
-	</label>
-	<button>
-		search
-	</button>
+<div id="content" *ngFor="let movie of movies">
+	<article class="p3">
+		<a href="#"></a>
+		<h2>description</h2>
+	</article>
 </div>
