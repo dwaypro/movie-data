@@ -1,43 +1,11 @@
-<h2> My Movies! </h2>
-
-
-<div id="page">
-	<img src='/assets/logo.png' class="logo">
-
-<div class="container">
-	<div id="header">
-		<nav>
-			<ul>
-				<li class="linav">
-					<a title="about" href="#">About</a>
-				</li>
-				<li class="linav">
-					<a title ="projects" href="#">Projects</a>
-				</li>
-				<li class="linav"> 
-					<a title="recognition" href="#"> Recognition</a>
-				</li>
-				<li class="linav"> 
-					<a title="blog" href="#">Blog</a>
-				</li>
-			</ul>
-			<ul id="secondary">
-				<li class="hdetails">
-					A selection of our prized collection. Each is unique through rigorous design research - as they respond to time, place and the varied circumstances of history...
-				</li>
-			</ul>
-		</nav>
-	</div>	
-
-	<div id="middle">
-		<div id="content" class="row">
-			<div *ngFor="let movie of movies" class="col-sm-3 col-sm-3 box">
-		    <article class="p3"> 
-		    	<img src={{movie.photo}} class="frame">
-		    	{{movie.id}}{{movie.title}}
-		   	</article>
-			</div>
+<div id="middle">
+	<div id="content" class="row">
+		<div *ngFor="let movie of movies" class="col-sm-3 col-sm-3 box">
+	    <article class="p3"> 
+	    	<img src={{movie.photo}} class="frame">
+	    	{{movie.id}}{{movie.title}}
+	   	</article>
 		</div>
 	</div>
 </div>
-</div>
+

@@ -62,6 +62,7 @@ ul {
 	zoom: 1;
 	margin-left: -10px;
 }
+
 div {
 	display: block;
 }
@@ -73,35 +74,10 @@ div {
 	width: 230px;
 }
 
-a {
-	display: block;
-	color: white;
-	font-size: 2em;
-	text-decoration: none;
-}
-
-.a {
-	display: block;
-	height: 158px;
-}
 
 .frame {
 	height: 158px;
 	width: 230px;
-}
-
-.logo {
-	margin-left: 50px;
-	width: 60px;
-	height: 60px;
-	position: absolute;
-}
-
-#page {
-	width: 711px;
-	margin: 28px auto;
-	position: relative;
-	overflow: hidden;
 }
 
 #middle {
@@ -117,9 +93,7 @@ a {
 	border-top-color: #aeaeae;
 }
 
-.container {
-	margin-top: 160px;
-}
+
 .box {
 	width: 230px;
 	margin-left: 10px;

@@ -4,6 +4,26 @@ body {
 	line-height: 1.8em;	
 }
 
+#page {
+	width: 711px;
+	margin: 28px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	margin-top: 160px;
+}
+
+.logo {
+	padding-top: 20px;
+	margin-left: 50px;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+}
+
 div {
 	display: block;
 }
+
