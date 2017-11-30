@@ -4,6 +4,7 @@ import { MockMoviesService } from '../mock-movies.service';
 import { MoviesService } from '../movies.service';
 import 'rxjs/add/operator/map';
 
+declare var $: any;
 
 @Component({
   selector: 'app-movies',
@@ -24,6 +25,10 @@ export class MoviesComponent implements OnInit {
   ngOnInit() {
     this.getMovies();
     this.reqMovies();
+  }
+
+  ngAfterViewInit(){
+  
   }
 
   getMovies(): void{

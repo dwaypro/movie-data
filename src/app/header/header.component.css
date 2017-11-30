@@ -3,7 +3,7 @@ nav {
 }
 
 ul {
-	margin-left: -10px;
+	margin-left: -30px;
 	list-style-type: disc;
 }
 
@@ -17,7 +17,7 @@ ul {
 	top: 98px;
 	left: 0;
 	width: 720px;
-	margin: 0;
+	margin-left: 22px;
 	padding: 0;
 	list-style-type: disc;
 
@@ -40,6 +40,7 @@ ul {
 	font-size: 3em;
 	line-height: 1.1em;
 	font-weight: 300;
+	margin-left: 50px;
 }
 
 .linav {
@@ -51,6 +52,7 @@ ul {
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #aeaeae;
+	text-align: center;
 }
 
 a {
