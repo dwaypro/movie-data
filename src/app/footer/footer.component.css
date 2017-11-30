@@ -1,0 +1,31 @@
+#footer{
+	position: relative;
+	padding-top: 30px;
+	color: #aeaeae;
+	width:150px;
+}
+
+#menu-footer{
+	list-style-type: none;
+	margin:  0;
+	padding: 0;
+}
+
+.fitem{
+	font-size: 1.25em;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #aeaeae; 
+}
+
+.flink {
+	color: #aeaeae;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}

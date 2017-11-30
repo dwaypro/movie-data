@@ -8,7 +8,6 @@ ul {
 	list-style-type: disc;
 }
 
-
 .header {
 	height: 200px;
 	border-bottom: 1px solid #aeaeae;
@@ -97,5 +96,9 @@ div {
 .box {
 	width: 230px;
 	margin-left: 10px;
+}
+
+h3 {
+	color: white;
 }
 

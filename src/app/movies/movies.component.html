@@ -1,11 +1,11 @@
 <div id="middle">
 	<div id="content" class="row">
-		<div *ngFor="let movie of movies" class="col-sm-3 col-sm-3 box">
-	    <article class="p3"> 
-	    	<img src={{movie.photo}} class="frame">
-	    	{{movie.id}}{{movie.title}}
-	   	</article>
+		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3 box">
+			<article class="p3">
+				<img src= 'https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame">
+			</article>
 		</div>
 	</div>
 </div>
+
 

@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Movie } from '../movie';
 import { MockMoviesService } from '../mock-movies.service';
+import { MoviesService } from '../movies.service';
+import 'rxjs/add/operator/map';
+
 
 @Component({
   selector: 'app-movies',
@@ -10,18 +13,26 @@ import { MockMoviesService } from '../mock-movies.service';
 
 export class MoviesComponent implements OnInit {
 
-  movies: Movie[];
-  
+  movies: Movie[]; 
+  posters = {};
+
   constructor(
     private mockMoviesService: MockMoviesService,
+    private moviesService: MoviesService,
   	) {}
 
   ngOnInit() {
     this.getMovies();
+    this.reqMovies();
   }
 
   getMovies(): void{
     this.movies = this.mockMoviesService.getMovies();
   }
+
+  reqMovies() {
+    this.moviesService.requestMovies().subscribe(data => this.posters = data.results);
+  }
+
 
 }
