@@ -9,3 +9,15 @@ body {
 div {
 	display: block;
 }
+
+.modal {
+	top: 30%;
+}
+
+.fade {
+	opacity: 1;
+}
+
+.modal-backdrop.fade {
+	opacity: .6;
+}

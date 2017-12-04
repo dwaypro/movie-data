@@ -10,6 +10,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchComponent } from './search/search.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -26,8 +27,9 @@ import { SearchComponent } from './search/search.component';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule.forRoot(),
   ],
-  providers: [ MoviesService, MockMoviesService, MoviesComponent ],
+  providers: [ MoviesService, MockMoviesService, MoviesComponent, NgbModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
