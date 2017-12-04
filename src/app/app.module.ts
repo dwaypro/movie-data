@@ -27,7 +27,7 @@ import { SearchComponent } from './search/search.component';
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [ MoviesService, MockMoviesService ],
+  providers: [ MoviesService, MockMoviesService, MoviesComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
