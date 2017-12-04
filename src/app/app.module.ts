@@ -5,11 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { MoviesService } from './movies.service';
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
-import {MockMoviesService} from './mock-movies.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SearchComponent } from './search/search.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -20,7 +18,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MoviesComponent,
     HeaderComponent,
     FooterComponent,
-    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgbModule.forRoot(),
   ],
-  providers: [ MoviesService, MockMoviesService, MoviesComponent, NgbModule ],
+  providers: [ MoviesService, MoviesComponent, NgbModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
