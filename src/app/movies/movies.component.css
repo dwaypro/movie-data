@@ -62,6 +62,18 @@ h3 {
 .sform{
 	margin-left: 60px;
 }
+
+#middle {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+button {
+	display: block;
+	width: 100px;
+}
+
+
 .frame {
 	height: 25%;
 	width: 25%;
