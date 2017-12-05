@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MoviesService } from '../movies.service';
 import { environment } from '../../environments/environment';
 import { FormsModule } from '@angular/forms';
+import { Term } from '../term';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -22,7 +23,7 @@ export class MoviesComponent implements OnInit {
 
   constructor(
     private moviesService: MoviesService,
-    private modalService: NgbModal,
+    private modalService: NgbModal
   	) {}
 
   ngOnInit() {
@@ -44,7 +45,7 @@ export class MoviesComponent implements OnInit {
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
       return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK){
       return 'by clicking on a backdrop';
     } else {
       return  `with: ${reason}`;
@@ -56,11 +57,12 @@ export class MoviesComponent implements OnInit {
     this.moviesService.requestMovies().subscribe(data => this.posters = data.results);
   }
 
-  searchMovies() {
+  searchMovies(): void {
     var url = `https://api.themoviedb.org/3/search/movie?api_key=${environment.apiKey}&query=${this.term.input}&language=en-US&page=1`;
+
     this.moviesService.searchMovies(url)
-    .subscribe(data => {this.posters = data.results)
-    };
+    .subscribe(data => this.posters = data.results);
   }
 
+}
 

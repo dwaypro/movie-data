@@ -4,6 +4,7 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Poster } from './poster';
 import { Term } from './term';
+import { Observable } from 'rxjs/Observable';
 
 import { environment } from '../environments/environment';
 
@@ -18,17 +19,15 @@ export class MoviesService {
 
   private moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${environment.apiKey}&language=en-US&page=1`;
 
-  private searchUrl = Term.output;
-
   constructor(
   	private http: HttpClient,
   ) { }
 
-  requestMovies() {
+  requestMovies(): Observable<any>  {
   	return this.http.get(this.moviesUrl)
   }
 
-  searchMovies(url) {
+  searchMovies(url): Observable<any> {
     return this.http.get(url)
   }
 
