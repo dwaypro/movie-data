@@ -62,7 +62,7 @@ export class MoviesComponent implements OnInit {
     var url = `https://api.themoviedb.org/3/search/movie?api_key=${environment.apiKey}&query=${this.term.input}&language=en-US&page=1`;
     this.moviesService.searchMovies(url)
     .subscribe(data => {
-      this.posters = data.results)
+      this.posters = data.results);
     };
   }
 }
