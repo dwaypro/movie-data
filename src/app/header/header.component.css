@@ -63,5 +63,20 @@ a {
 	font-size: 2em;
 	text-decoration: none;
 }
+}
+
+@media screen and (max-width: 320px) {
+
+	.linav{
+		margin-left: 40px;
+	}
+
+
+	a {
+	display: block;
+	color: white;
+	font-size: 2em;
+	text-decoration: none;
+}
 
 }

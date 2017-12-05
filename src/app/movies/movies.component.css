@@ -57,5 +57,23 @@ h3 {
 }
 
 
+@media screen and (max-width: 320px){
+
+.sform{
+	margin-left: 60px;
+}
+.frame {
+	height: 25%;
+	width: 25%;
+}
+
+.p3 {
+	margin-left: 75px;
+	margin-bottom: 10px;
+}
+
+}
+
+
 
 

@@ -27,3 +27,10 @@ div {
 	display: block;
 }
 
+@media screen and (max-width: 320px) {
+	.logo{ 
+		margin-left: 100px;
+	}
+
+}
+
