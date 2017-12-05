@@ -1,3 +1,5 @@
+@media screen and (min-width: 768px){
+
 nav {
 	position: relative;
 }
@@ -60,4 +62,6 @@ a {
 	color: white;
 	font-size: 2em;
 	text-decoration: none;
+}
+
 }

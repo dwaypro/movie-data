@@ -1,14 +1,6 @@
-<div id="middle">
-	<div id="content" class="row">
-		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3 box">
-			<article class="p3">
-				<img src='https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame" (click)="reqDetails()" (click)="open(content)">
-			</article>
-		</div>
-	</div>
-</div>
 
-<ng-template #content let-c="close" let-d="dismiss">
+<div id="middle">
+  <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">Modal title</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
@@ -31,5 +23,17 @@
   </label>
   <button type="submit" class="btn btn success" (click)="searchMovies()">Search!</button>
 </div>
+
+
+	<div id="content" class="row">
+		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3 box">
+			<article class="p3">
+				<img src='https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame" (click)="reqDetails()" (click)="open(content)">
+			</article>
+		</div>
+	</div>
+</div>
+
+
 
 
