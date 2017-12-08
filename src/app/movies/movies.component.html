@@ -1,53 +1,34 @@
 
 <div id="middle">
-
-
-<div  class="sform">
-  <label>term:
-    <input [(ngModel)]="term.input" placeholder="title">
-  </label>
-  <button type="submit" class="btn btn success" (click)="searchMovies()">Search!</button>
-</div>
-
+  
+  <div id="form" class="container-fluid">
+    <div id="shift">
+      <input [(ngModel)]="term.input" placeholder="title" class="sform">
+      <button type="submit" class="search" (click)="searchMovies()">Search!</button> 
+    </div>
+  </div>
 
 <div class="container">
   	<div id="content" class="container-fluid">
   		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3">
   			<article class="p3">
   				<img src='https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame" (click)="reqDetails()" (click)="open(content)">
-
-
-          <ng-template #content let-c="close" let-d="dismiss">
-            <div class="modal-header">
-              <h4 class="modal-title">{{poster.title}}</h4>
-                <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
+             <ng-template #content let-c="close" let-d="dismiss">
+                    <div class="modal-header">
+                      <h4 class="modal-title">{{poster.title}}</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                            </div>
+                            <div class="modal-body">
+                          <h3>{{poster.overview}}&hellip;</h3>
+                        </div>
+                      <div class="modal-footer">
+                        <h3 style="float:left"> 
+                        Rating: {{poster.vote_average}} </h3>
+                        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
                     </div>
-                    <div class="modal-body">
-                  <h3>{{poster.overview}}&hellip;</h3>
-                </div>
-              <div class="modal-footer">
-                <h3 style="float:left"> 
-                Rating: {{poster.vote_average}} </h3>
-                <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
-            </div>
-          </ng-template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  </ng-template>
   			</article>
   		</div>
   	</div>

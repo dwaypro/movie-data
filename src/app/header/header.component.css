@@ -15,30 +15,24 @@ ul {
 	border-bottom: 1px solid #aeaeae;
 }
 
-.hdetails{
-	list-style-type: none;
-	color: white;
-	height: 130px;
-	width: 550px;
-	text-align: center;
-	padding-top: 19px;
-	font-size: 3em;
-	line-height: 1.1em;
-	font-weight: 300;
-	margin-left: 50px;
-	word-wrap: break-word;
-}
-
 .linav {
 	display: inline;
 	float: left;
 	margin-left: 10px;
-	width: 150px;
+	width: 100%;
 	min-height: 50px;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #aeaeae;
 	text-align: center;
+}
+
+#logocontainer{
+	text-align: center;
+}
+.logo {
+	padding-top: 20px;
+	margin-left: 50px;
+	width: 60px;
+	height: 60px;
+	position: relative;
 }
 
 a {
@@ -49,6 +43,7 @@ a {
 }
 
 .container-fluid {
+		padding-top: 120px;
 	  margin-right: auto;
     margin-left: auto;
 }
