@@ -5,14 +5,15 @@ body {
 }
 
 #page {
-	width: 711px;
 	margin: 28px auto;
-	position: relative;
-	overflow: hidden;
+	margin-right: auto;
+  margin-left: auto;
 }
 
-.container {
+.container-fluid {
 	margin-top: 160px;
+	margin-right: auto;
+  margin-left: auto;
 }
 
 .logo {
@@ -27,11 +28,4 @@ div {
 	display: block;
 }
 
-@media screen and (min-width: 300px) and (max-width: 768px){
-	.logo{ 
-		margin-left: 36%;
-	  margin-right: 25%;
-	}
-
-}
 

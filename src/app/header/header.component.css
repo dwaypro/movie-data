@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+
 
 nav {
 	position: relative;
@@ -14,23 +14,6 @@ ul {
 	height: 200px;
 	border-bottom: 1px solid #aeaeae;
 }
-#secondary{
-	position: absolute;
-	top: 98px;
-	left: 0;
-	width: 720px;
-	margin-left: 22px;
-	padding: 0;
-	list-style-type: disc;
-
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #aeaeae;
-
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #aeaeae;
-}
 
 .hdetails{
 	list-style-type: none;
@@ -43,6 +26,7 @@ ul {
 	line-height: 1.1em;
 	font-weight: 300;
 	margin-left: 50px;
+	word-wrap: break-word;
 }
 
 .linav {
@@ -63,21 +47,9 @@ a {
 	font-size: 2em;
 	text-decoration: none;
 }
+
+.container-fluid {
+	  margin-right: auto;
+    margin-left: auto;
 }
 
-@media screen and (min-width: 300px) and (max-width: 768px){
-
-	.linav{
-		margin-left: 32%;
-	  margin-right: 25%;
-	}
-
-
-	a {
-	display: block;
-	color: white;
-	font-size: 2em;
-	text-decoration: none;
-}
-
-}

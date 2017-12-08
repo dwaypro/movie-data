@@ -25,13 +25,15 @@
 </div>
 
 
-	<div id="content" class="row">
-		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3 box">
-			<article class="p3">
-				<img src='https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame" (click)="reqDetails()" (click)="open(content)">
-			</article>
-		</div>
-	</div>
+<div class="container">
+  	<div id="content" class="container-fluid">
+  		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3">
+  			<article class="p3">
+  				<img src='https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame" (click)="reqDetails()" (click)="open(content)">
+  			</article>
+  		</div>
+  	</div>
+  </div>
 </div>
 
 
