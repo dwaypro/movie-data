@@ -14,6 +14,18 @@ div {
 	top: 30%;
 }
 
+.modal-body {
+	max-height: 130px;
+	overflow: scroll;
+}
+.modal-dialog {
+	padding: 50px;
+}
+
+.modal-content {
+	text-align: center;
+}
+
 .fade {
 	opacity: 1;
 }
