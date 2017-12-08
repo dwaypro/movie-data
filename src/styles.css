@@ -14,6 +14,14 @@ div {
 	top: 30%;
 }
 
+.modal-header {
+	padding-top: 20%;
+}
+
+.btn {
+	margin-top: 15px;
+}
+
 .modal-body {
 	max-height: 130px;
 	overflow: scroll;

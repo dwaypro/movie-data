@@ -25,8 +25,8 @@
   	width:150px;
 }
 .search {
-		text-align: center;
-	  background: #222;
+    text-align: center;
+	background: #222;
     background: -webkit-linear-gradient(#333, #222);
     background: linear-gradient(#333, #222);
     box-sizing: border-box;
@@ -58,10 +58,11 @@ img:hover {
 
 #form.container-fluid{
 		text-align: center;
+		padding-bottom: 10px;
   }
   #shift {
   	text-align: center;
-  	padding-left: 45px;
+  	padding-left: 10%;
   	 
   }
 
@@ -69,13 +70,14 @@ h3 {
 	color: grey;
 	font-size: 15px;
 }
-.modal-dialog {
-	padding: 50px;
-}
-.modal-content {
-	text-align: center;
+
+@media (min-width: 768px) {
+
+#shift {
+    padding-left: 50px;
 }
 
+}
 
 
 
