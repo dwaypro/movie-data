@@ -31,7 +31,7 @@ export class MoviesComponent implements OnInit {
   }
 
   reqDetails(){
-    console.log("hello world!");
+    
   }
 
   open(content) {
