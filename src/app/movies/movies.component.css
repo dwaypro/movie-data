@@ -210,8 +210,9 @@ nav {
   background: linear-gradient(#333, #222);
   
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  padding-top: 60px;
+  height: 3000px;
+  overflow: auto;
  
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -225,7 +226,6 @@ nav {
 
 #menu li
 {
-  padding: 10px 0;
   font-size: 22px;
 }
 
@@ -273,6 +273,13 @@ a {
     padding-top: 10px;
     width: 100%;
     z-index: 2;
+}
+
+
+@media (min-width: 630px) and (max-width: 680px) {
+  #menu{
+    padding-left: 100px;
+    }
 }
 
 
