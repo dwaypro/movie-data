@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MoviesService } from './movies.service';
+import { SourceService } from './source.service';
+
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -24,7 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgbModule.forRoot(),
   ],
-  providers: [ MoviesService, MoviesComponent, NgbModule ],
+  providers: [ MoviesService, MoviesComponent, NgbModule, SourceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

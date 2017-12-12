@@ -1,9 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MoviesService } from '../movies.service';
+import { SourceService } from '../source.service';
 import { environment } from '../../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { Term } from '../term';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-movies',
@@ -15,6 +17,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 export class MoviesComponent implements OnInit {
   closeResult: string;
   posters = [];
+  sources = [];
 
   term: Term = {
     input: '',
@@ -23,7 +26,8 @@ export class MoviesComponent implements OnInit {
 
   constructor(
     private moviesService: MoviesService,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private movieSource: SourceService,
   	) {}
 
   ngOnInit() {
@@ -56,6 +60,14 @@ export class MoviesComponent implements OnInit {
   reqMovies() {
     this.moviesService.requestMovies().subscribe(data => this.posters = data.results);
   }
+
+  movSource() {
+    this.movieSource.requestSource().subscribe(data => this.sources = data.results);
+
+    console.log(this.sources);
+    
+  }
+
 
   searchMovies(): void {
     var url = `https://api.themoviedb.org/3/search/movie?api_key=${environment.apiKey}&query=${this.term.input}&language=en-US&page=1`;
