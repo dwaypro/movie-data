@@ -4,7 +4,7 @@
 	padding-top: 30px;
 	color: #aeaeae;
 	width:150px;
-	margin-left: 10%;
+	margin-left: 35px;
 }
 
 #menu-footer{
@@ -32,10 +32,10 @@
 	vertical-align: baseline;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 680px) {
 
 #footer {
-    margin-left: 50px;
+    margin-left: 35px;
 }
 
 }
