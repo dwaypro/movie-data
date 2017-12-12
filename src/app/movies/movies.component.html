@@ -1,10 +1,36 @@
 
 <div id="middle">
-  
-  <div id="form" class="container-fluid">
+  <div id="form" class="container">
     <div id="shift">
+      <img src='/assets/logo.png' class="logo">
       <input [(ngModel)]="term.input" placeholder="title" class="sform">
-      <button type="submit" class="search" (click)="searchMovies()">Search!</button> 
+      <button type="submit" class="search" (click)="searchMovies()">Search!</button>
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox"/>
+              
+              <span></span>  
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li class="linav">
+                  <a title="about" href="#">About</a>
+                </li>
+                <li class="linav">
+                  <a title ="projects" href="https://github.com/dwaypro">Projects</a>
+                </li>
+                <li class="linav"> 
+                  <a title="recognition" href="#"> Recognition</a>
+                </li>
+                <li class="linav"> 
+                  <a title="blog" href="#">Blog</a>
+                </li>
+              </ul>
+          </div> 
+        </nav>
+  
+      <div id="header" class="container-fluid">
+      </div> 
     </div>
   </div>
 

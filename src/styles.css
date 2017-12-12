@@ -12,13 +12,17 @@ div {
 
 .modal {
 	top: 30%;
+
 }
 
 .modal-header {
 	padding-top: 20%;
+	
 }
 
 .btn {
+	color: grey;
+	background-color:rgba(0,0,0,0);
 	margin-top: 15px;
 }
 
@@ -32,6 +36,9 @@ div {
 
 .modal-content {
 	text-align: center;
+	background: -webkit-linear-gradient(#333, #222);
+  background: linear-gradient(#333, #222);
+  color: 	grey;
 }
 
 .fade {
