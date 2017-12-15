@@ -32,6 +32,7 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit() {
     this.reqMovies();
+    this.validSize();
   }
 
   reqDetails(){
@@ -66,6 +67,17 @@ export class MoviesComponent implements OnInit {
 
     console.log(this.sources);
     
+  }
+
+  validSize(){
+    var viewportWidth = document.documentElement.clientWidth;
+
+    if(viewportWidth < 680){
+      return true;
+    }else{
+      return false
+    }
+
   }
 
 

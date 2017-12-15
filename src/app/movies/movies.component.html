@@ -24,7 +24,9 @@
                 <li class="linav"> 
                   <a routerLink="blog" routerLinkActive="active" title="blog" href="#">Blog</a>
                 </li>
-                <router-outlet></router-outlet>
+                <div *ngIf="validSize()">
+                  <router-outlet></router-outlet>
+                </div>
               </ul>
 
           </div> 
