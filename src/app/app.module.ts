@@ -49,10 +49,6 @@ const routes: Routes =[
     HttpClientModule,
     FormsModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(
-    routes,
-    { enableTracing: true}
-    ),
   ],
   providers: [ MoviesService, MoviesComponent, NgbModule, SourceService ],
   bootstrap: [AppComponent]
