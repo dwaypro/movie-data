@@ -1,0 +1,15 @@
+
+.projectscomponent{
+	padding-top: 170px;
+	margin: 50px;
+	font-size: 2em;
+}
+
+p {
+	color: grey;
+	
+}
+
+li {
+	list-style: none;
+}

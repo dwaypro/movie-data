@@ -8,24 +8,26 @@
         <nav role="navigation">
           <div id="menuToggle">
             <input type="checkbox"/>
-              
               <span></span>  
               <span></span>
               <span></span>
               <ul id="menu">
                 <li class="linav">
-                  <a title="about" href="http://grshare.herokuapp.com/">About</a>
+                  <a routerLink="/about" routerLinkActive="active" title="about">About</a>
                 </li>
                 <li class="linav">
-                  <a title ="projects" href="https://github.com/dwaypro">Projects</a>
+                  <a routerLink="/projects" routerLinkActive="active" title ="projects">Projects</a>
                 </li>
                 <li class="linav"> 
-                  <a title="recognition" href="https://www.linkedin.com/in/daniel-way-22875765/"> Recognition</a>
+
+                  <a routerLink="/recognition" routerLinkActive="active" title="recognition"> Recognition</a>
                 </li>
                 <li class="linav"> 
-                  <a title="blog" href="#">Blog</a>
+                  <a routerLink="blog" routerLinkActive="active" title="blog" href="#">Blog</a>
                 </li>
+                <router-outlet></router-outlet>
               </ul>
+
           </div> 
         </nav>
   
@@ -48,20 +50,16 @@
                             </div>
                             <div class="modal-body">
                           <h3>{{poster.overview}}&hellip;</h3>
-                        </div>
-                      <div class="source-display">
-                          
-                      </div>  
-                      <div class="modal-footer">
-                        <h3 style="float:left"> 
-                        Rating: {{poster.vote_average}} </h3>
-                        <button type="button" class="btn btn-outline-dark" id="watch" (click)="c('Close click')">
-                        Watch
-                        </button>
-                        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
                     </div>
-
-                  </ng-template>
+                    <div class="modal-footer">
+                      <h3 style="float:left"> 
+                      Rating: {{poster.vote_average}} </h3>
+                      <button type="button" class="btn btn-outline-dark" id="watch" (click)="c('Close click')">
+                      Watch
+                      </button>
+                      <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+                    </div>
+            </ng-template>
   			</article>
   		</div>
   	</div>
