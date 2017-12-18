@@ -37,6 +37,10 @@
     </div>
   </div>
 
+ <div *ngIf="validSize() == false">
+    <router-outlet></router-outlet>
+</div>
+
 <div class="container">
   	<div id="content" class="container-fluid">
   		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3">
@@ -55,10 +59,23 @@
                     <div class="modal-footer">
                       <h3 style="float:left"> 
                       Rating: {{poster.vote_average}} </h3>
-                      <button type="button" class="btn btn-outline-dark" id="watch" (click)="c('Close click')">
+                      <button type="button" class="btn btn-outline-dark" id="watch" (click)="viewMovie()">
                       Watch
                       </button>
                       <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+                    </div>
+                    <div id="dbox">
+                      <ul>
+                        <li class="slink">
+                          <a href="https://www.netflix.com/search?q={{poster.title}}">Netflix</a>
+                        </li>
+                        <li class="slink">
+                          <a href="https://www.hulu.com/search?q={{poster.title}}">Hulu</a>
+                        </li>
+                        <li class="slink">
+                          <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dinstant-video&field-keywords={{poster.title}}">Amazon</a>
+                        </li>
+                    </ul>
                     </div>
             </ng-template>
   			</article>

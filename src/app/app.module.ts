@@ -25,8 +25,6 @@ const routes: Routes =[
   { path: 'recognition', component: RecognitionComponent },
   { path: 'blog', component: BlogComponent },
 
-
-
   { path: '',
     redirectTo: '',
     pathMatch: 'full'

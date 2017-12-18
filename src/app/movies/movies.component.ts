@@ -7,6 +7,7 @@ import { Term } from '../term';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 
+
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
@@ -76,6 +77,18 @@ export class MoviesComponent implements OnInit {
       return true;
     }else{
       return false
+    }
+
+  }
+
+  viewMovie(){
+    var displayBox = document.getElementById('dbox');
+
+    console.log(displayBox.style.display);
+    if (displayBox.style.display=='none' || displayBox.style.display==''){
+      displayBox.style.display='block';
+    }else{
+      displayBox.style.display='none';
     }
 
   }
