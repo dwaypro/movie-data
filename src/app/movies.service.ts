@@ -18,13 +18,20 @@ const httpOptions = {
   export class MoviesService {
 
   private moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${environment.apiKey}&language=en-US&page=1`;
-
+  
+  private nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${environment.apiKey}&language=en-US&page=1`
+  
   constructor(
   	private http: HttpClient,
   ) { }
 
   requestMovies(): Observable<any>  {
   	return this.http.get(this.moviesUrl)
+  }
+
+
+  requestNowPlaying(): Observable<any> {
+    return this.http.get(this.nowPlayingUrl);
   }
 
   searchMovies(url): Observable<any> {

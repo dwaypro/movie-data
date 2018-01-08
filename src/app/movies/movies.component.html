@@ -1,48 +1,19 @@
-
 <div id="middle">
   <div id="form" class="container">
     <div id="shift">
       <input [(ngModel)]="term.input" placeholder="title" class="sform">
       <button type="submit" class="search" (click)="searchMovies()">Search!</button>
-        <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox"/>
-              <span></span>  
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <li class="linav">
-                  <a routerLink="/about" routerLinkActive="active" title="about">About</a>
-                </li>
-                <li class="linav">
-                  <a routerLink="/projects" routerLinkActive="active" title ="projects">Projects</a>
-                </li>
-                <li class="linav"> 
 
-                  <a routerLink="/recognition" routerLinkActive="active" title="recognition"> Recognition</a>
-                </li>
-                <li class="linav"> 
-                  <a routerLink="blog" routerLinkActive="active" title="blog" href="#">Blog</a>
-                </li>
-                <div *ngIf="validSize()">
-                  <router-outlet></router-outlet>
-                </div>
-              </ul>
-
-          </div> 
-        </nav>
-  
       <div id="header" class="container-fluid">
       </div> 
     </div>
   </div>
-
-<div class="container">
+<div class="container" (click)="moviesSwitch()">
   	<div id="content" class="container-fluid">
-  		<div *ngFor="let poster of posters" class=" col-sm-3 col-sm-3">
+  		<div *ngFor="let poster of posters">
   			<article class="p3">
   				<img src='https://image.tmdb.org/t/p/w500/{{poster.poster_path}}' class="frame" (click)="reqDetails()" (click)="open(content)">
-             <ng-template #content let-c="close" let-d="dismiss">
+             <ng-template #content let-c="close" let-d="dismiss" let-item>
                     <div class="modal-header">
                       <h4 class="modal-title">{{poster.title}}</h4>
                         <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
@@ -72,7 +43,7 @@
                           <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dinstant-video&field-keywords={{poster.title}}">Amazon</a>
                         </li>
                     </ul>
-                    </div>
+                  </div>
             </ng-template>
   			</article>
   		</div>

@@ -8,6 +8,7 @@
 	width: 100%;
 }
 
+
 #watch {
     padding-right: 40px;
 }
@@ -293,10 +294,13 @@ a {
 }
 
 
+
+
 @media (min-width: 630px) and (max-width: 680px) {
   #menu{
     padding-left: 100px;
     }
+
 }
 
 
