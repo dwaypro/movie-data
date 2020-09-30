@@ -34,6 +34,13 @@ export class MoviesComponent implements OnInit {
   ngOnInit() {
     this.reqMovies();
     this.validSize();
+  window.addEventListener('scroll', function(){
+    if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
+      // console.log('les go!');
+      // fetch 
+    }
+  });
+  
   }
 
   reqDetails(){
@@ -105,6 +112,7 @@ export class MoviesComponent implements OnInit {
     }
 
   }
+
 
 }
 
