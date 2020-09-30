@@ -2,7 +2,7 @@
 <div id="middle">
   <div id="form" class="container">
     <div id="shift">
-      <input [(ngModel)]="term.input" placeholder="title" class="sform">
+      <input [(ngModel)]="term.input" placeholder="title" class="sform" (keyup.enter)="searchMovies()">
       <button type="submit" class="search" (click)="searchMovies()">Search!</button>
         <nav role="navigation">
           <div id="menuToggle">
@@ -10,25 +10,6 @@
               <span></span>  
               <span></span>
               <span></span>
-              <ul id="menu">
-                <li class="linav">
-                  <a routerLink="/about" routerLinkActive="active" title="about">About</a>
-                </li>
-                <li class="linav">
-                  <a routerLink="/projects" routerLinkActive="active" title ="projects">Projects</a>
-                </li>
-                <li class="linav"> 
-
-                  <a routerLink="/recognition" routerLinkActive="active" title="recognition"> Recognition</a>
-                </li>
-                <li class="linav"> 
-                  <a routerLink="blog" routerLinkActive="active" title="blog" href="#">Blog</a>
-                </li>
-                <div *ngIf="validSize()">
-                  <router-outlet></router-outlet>
-                </div>
-              </ul>
-
           </div> 
         </nav>
   
@@ -51,7 +32,7 @@
                             </div>
                             <div class="modal-body">
                           <h3>{{poster.overview}}&hellip;</h3>
-                    </div>
+                      </div>
                     <div class="modal-footer">
                       <h3 style="float:left"> 
                       Rating: {{poster.vote_average}} </h3>
@@ -60,19 +41,7 @@
                       </button>
                       <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
                     </div>
-                    <div id="dbox">
-                      <ul>
-                        <li class="slink">
-                          <a href="https://www.netflix.com/search?q={{poster.title}}">Netflix</a>
-                        </li>
-                        <li class="slink">
-                          <a href="https://www.hulu.com/search?q={{poster.title}}">Hulu</a>
-                        </li>
-                        <li class="slink">
-                          <a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dinstant-video&field-keywords={{poster.title}}">Amazon</a>
-                        </li>
-                    </ul>
-                    </div>
+
             </ng-template>
   			</article>
   		</div>

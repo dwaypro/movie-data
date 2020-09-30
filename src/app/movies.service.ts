@@ -17,7 +17,7 @@ const httpOptions = {
 @Injectable()
   export class MoviesService {
 
-  private moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${environment.apiKey}&language=en-US&page=1`;
+  private moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=a9a1847f7070d385d8a56c91a000e283&language=en-US&page=1`;
 
   constructor(
   	private http: HttpClient,

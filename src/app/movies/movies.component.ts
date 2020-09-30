@@ -95,10 +95,15 @@ export class MoviesComponent implements OnInit {
 
 
   searchMovies(): void {
-    var url = `https://api.themoviedb.org/3/search/movie?api_key=${environment.apiKey}&query=${this.term.input}&language=en-US&page=1`;
+    console.log('this.term.input', this.term.input);
+    if(this.term.input.length){
+      var url = `https://api.themoviedb.org/3/search/movie?api_key=a9a1847f7070d385d8a56c91a000e283&query=${this.term.input}&language=en-US&page=1`;
+      this.moviesService.searchMovies(url)
+      .subscribe(data => this.posters = data.results);
+    }else{
+      this.reqMovies();
+    }
 
-    this.moviesService.searchMovies(url)
-    .subscribe(data => this.posters = data.results);
   }
 
 }
