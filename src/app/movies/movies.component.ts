@@ -36,8 +36,6 @@ export class MoviesComponent implements OnInit {
     this.validSize();
   window.addEventListener('scroll', function(){
     if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight){
-      // console.log('les go!');
-      // fetch 
     }
   });
   
@@ -90,8 +88,6 @@ export class MoviesComponent implements OnInit {
 
   viewMovie(){
     var displayBox = document.getElementById('dbox');
-
-    console.log(displayBox.style.display);
     if (displayBox.style.display=='none' || displayBox.style.display==''){
       displayBox.style.display='block';
     }else{

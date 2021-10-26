@@ -294,6 +294,22 @@ a {
     z-index: 2;
 }
 
+.position-top-right{
+ 
+}
+.position-top-right span{
+  color:white !important
+}
+
+.close{
+  color:white !important;
+  position: absolute;
+}
+#myButton{
+  color: white !important;
+  position:absolute;  
+  right: 10px;
+}
 
 @media (min-width: 630px) and (max-width: 680px) {
   #menu{
